@@ -33,7 +33,7 @@ class AbstractChosen
     @results_none_found = @options.no_results_text or "No results match"
     @create_option = @options.create_option or false
     @persistent_create_option = @options.persistent_create_option or false
-    @create_option_text = @options.create_option_text or "Add option"
+    @create_option_text = @options.create_option_text or "Add option:"
 
   mouse_enter: -> @mouse_on_container = true
   mouse_leave: -> @mouse_on_container = false

@@ -133,7 +133,7 @@ Copyright (c) 2011 by Harvest
       this.results_none_found = this.options.no_results_text || "No results match";
       this.create_option = this.options.create_option || false;
       this.persistent_create_option = this.options.persistent_create_option || false;
-      return this.create_option_text = this.options.create_option_text || "Add option";
+      return this.create_option_text = this.options.create_option_text || "Add option:";
     };
 
     AbstractChosen.prototype.mouse_enter = function() {

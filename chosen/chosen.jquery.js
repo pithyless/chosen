@@ -133,7 +133,7 @@ Copyright (c) 2011 by Harvest
       this.results_none_found = this.options.no_results_text || "No results match";
       this.create_option = this.options.create_option || false;
       this.persistent_create_option = this.options.persistent_create_option || false;
-      return this.create_option_text = this.options.create_option_text || "Add option";
+      return this.create_option_text = this.options.create_option_text || "Add option:";
     };
 
     AbstractChosen.prototype.mouse_enter = function() {
@@ -853,7 +853,7 @@ Copyright (c) 2011 by Harvest
     Chosen.prototype.show_create_option = function(terms) {
       var create_option_html,
         _this = this;
-      create_option_html = $('<li class="create-option"><a href="javascript:void(0);">' + this.create_option_text + '</a>: "' + terms + '"</li>').bind("click", function(evt) {
+      create_option_html = $('<li class="create-option"><a href="javascript:void(0);">' + this.create_option_text + ' "' + terms + '"</a></li>').bind("click", function(evt) {
         return _this.select_create_option(terms);
       });
       return this.search_results.append(create_option_html);
