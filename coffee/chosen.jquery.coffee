@@ -445,7 +445,7 @@ class Chosen extends AbstractChosen
             this.result_clear_highlight() if @result_highlight and result_id is @result_highlight.attr 'id'
             this.result_deactivate result
 
-    if results < 1 and searchText.length
+    if results < 1 and searchText.length and not @create_option
       this.no_results searchText
     else
       this.show_create_option( searchText ) if @create_option and not exact_result and @persistent_create_option and searchText.length

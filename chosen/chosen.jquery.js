@@ -804,7 +804,7 @@ Copyright (c) 2011 by Harvest
           }
         }
       }
-      if (results < 1 && searchText.length) {
+      if (results < 1 && searchText.length && !this.create_option) {
         return this.no_results(searchText);
       } else {
         if (this.create_option && !exact_result && this.persistent_create_option && searchText.length) {
